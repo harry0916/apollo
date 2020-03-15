@@ -31,7 +31,7 @@ MSFLocalizationComponent::MSFLocalizationComponent() {}
 
 bool MSFLocalizationComponent::Init() {
   publisher_.reset(new LocalizationMsgPublisher(this->node_));
-
+  AFATAL << "mwz msf";
   if (!InitConfig()) {
     AERROR << "Init Config failed.";
     return false;
